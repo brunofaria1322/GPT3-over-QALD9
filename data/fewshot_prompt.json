@@ -1,0 +1,36 @@
+[
+    {
+        "question" : "What are the specialities of the UNC Health Care?",
+        "query" : "SELECT DISTINCT ?uri WHERE { <http://dbpedia.org/resource/UNC_Health_Care> <http://dbpedia.org/property/speciality> ?uri }"
+    },
+    {
+        "question" : "When was Olof Palme shot?",
+        "query" : "SELECT DISTINCT ?date WHERE { <http://dbpedia.org/resource/Olof_Palme> <http://dbpedia.org/ontology/deathDate> ?date }"
+    },
+    {
+        "question" : "How much is the elevation of Düsseldorf Airport ?",
+        "query" : "PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT ?ele WHERE { dbr:Düsseldorf_Airport dbo:elevation ?ele } LIMIT 1"
+    },
+    {
+        "question" : "Was Marc Chagall a jew?",
+        "query" : "ASK WHERE { <http://dbpedia.org/resource/Marc_Chagall> <http://dbpedia.org/property/ethnicity> \"Jewish\"@en }"
+    },
+    {
+        "question" : "What is the birth name of Angela Merkel?",
+        "query" : "SELECT DISTINCT ?string WHERE { <http://dbpedia.org/resource/Angela_Merkel> <http://dbpedia.org/property/birthName> ?string }"
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+

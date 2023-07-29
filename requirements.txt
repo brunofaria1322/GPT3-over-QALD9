@@ -1,0 +1,23 @@
+matplotlib
+pandas
+seaborn
+
+#### BLEU/ROUGE
+#torchtext
+bleu
+rouge
+
+#### GPT
+openai
+#### OPT
+transformers
+
+####
+sparqlwrapper
+torch
+tensorflow
+
+### Text Normalisation
+nltk
+num2words
+unidecode

@@ -1,0 +1,474 @@
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+The SPARQL query for the question "Who killed Caesar?" is 
+GPT3 answer: ['\n\nSELECT ?person\nWHERE {\n  ?person dbo:causeOfDeath dbr:Julius_Caesar .\n}']
+
+What is the SPARQL query for the question "Who killed Caesar?"?
+GPT3 answer: ['\n\nSELECT ?person ?cause WHERE { ?person dbo:cause ?cause . ?cause dbo:deathOf ?person . ?person dbo:deathDate "44 BC" . ?person dbo:name "Caesar" . }']
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: What is the SPARQL query for the question \"{question}\"?
+
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "length",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nSELECT ?person ?cause WHERE { ?person dbo:cause ?cause ."
+    }
+  ],
+  "created": 1668274907,
+  "id": "cmpl-6BonjmrcxMRiOwQyFF2k4HmodnFjU",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 18,
+    "prompt_tokens": 16,
+    "total_tokens": 34
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+
+GPT3 question: What is the SPARQL query for the question \"{question}\"?
+
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nSELECT ?person ?cause WHERE { ?person dbo:cause ?cause . ?cause dbo:deathDate \"44 BC\"^^xsd:date . ?person dbo:deathPlace \"Rome\"^^xsd:string . }"
+    }
+  ],
+  "created": 1668275594,
+  "id": "cmpl-6BoyosdTBfueVIk6HqqXiA1TInRFO",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 53,
+    "prompt_tokens": 16,
+    "total_tokens": 69
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: SPARQL for "{question}" is
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nSELECT ?person\nWHERE {\n  ?person dbo:causeOfDeath ?event .\n  ?event dbo:deathDate ?date .\n  ?event dbo:location ?location .\n  ?event dbo:deathPlace ?place .\n  ?event dbo:deathCause ?cause .\n  ?event dbo:count ?count .\n  ?event dbo:assassination ?assassination .\n  ?event dbo:attacker ?attacker .\n  ?event dbo:weapon ?weapon .\n  ?event dbo:target ?target .\n  ?event dbo:time ?time .\n  ?event dbo:victim ?victim .\n}\n\nLIMIT 1"
+    }
+  ],
+  "created": 1668276449,
+  "id": "cmpl-6BpCbhfkvBiDlC2tV8mAIxRre1H4J",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 161,
+    "prompt_tokens": 11,
+    "total_tokens": 172
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: What is the SPARQL query for the question "Who killed Caesar?" over DBpedia?
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nSELECT ?person ?personLabel \nWHERE \n{\n  ?person dbo:causeOfDeath dbr:Assassination_of_Julius_Caesar .\n  SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n}"
+    }
+  ],
+  "created": 1668277798,
+  "id": "cmpl-6BpYMYi5MrbJCpHx45gpU6nnkohlB",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 64,
+    "prompt_tokens": 19,
+    "total_tokens": 83
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: What is the SPARQL query for the question "Who killed Caesar?" by subject?
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nSELECT ?person\nWHERE\n{\n  ?person <http://dbpedia.org/ontology/killed> <http://dbpedia.org/resource/Caesar> .\n}"
+    }
+  ],
+  "created": 1668278076,
+  "id": "cmpl-6BpcqAir12VN41swm4G1o42pxWaMq",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 42,
+    "prompt_tokens": 18,
+    "total_tokens": 60
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: Write the complete SPARQL query to answer the question : Who killed Caesar?
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nSELECT ?person ?cause WHERE { ?person dbo:causeOfDeath ?cause . ?cause rdfs:label \"Assassination of Julius Caesar\"@en . }"
+    }
+  ],
+  "created": 1668278622,
+  "id": "cmpl-6BpleGx4lQXUqKPxBqY9r6u33XNYL",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 39,
+    "prompt_tokens": 16,
+    "total_tokens": 55
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: Write the complete SPARQL query to answer the question : Who killed Caesar?
+ Note that the query should be written in the SPARQL 1.1 syntax and should be complete, i.e. it should contain all the necessary prefixes and the SELECT clause.
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX dbr: <http://dbpedia.org/resource/>\n\nSELECT ?person\nWHERE {\n  dbr:Gaius_Julius_Caesar dbo:deathCause ?cause .\n  ?cause dbo:killer ?person .\n}"
+    }
+  ],
+  "created": 1668278916,
+  "id": "cmpl-6BpqOscQfJCZ2jPLuD4Uwem4wUPWb",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 188,
+    "prompt_tokens": 55,
+    "total_tokens": 243
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: Write the complete SPARQL query to answer the question : Who killed Caesar?
+ Note that the query should be written in the SPARQL 1.1 syntax, should be complete, and the WHERE clause should contain the following triple pattern: ?s ?p ?o.
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX owl: <http://www.w3.org/2002/07/owl#>\nPREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX dbr: <http://dbpedia.org/resource/>\n\nSELECT ?person\nWHERE {\n  ?person dbo:deathPlace dbr:Rome .\n  ?person dbo:deathDate ?date .\n  ?person dbo:causeOfDeath ?cod .\n  ?person dbo:occupation dbr:Politician .\n  ?person rdfs:label ?label .\n  FILTER (?date >= \"44 BC\"^^xsd:dateTime && ?date <= \"44 BC\"^^xsd:dateTime)\n}"
+    }
+  ],
+  "created": 1668279131,
+  "id": "cmpl-6Bptr7EqHsXpKDPHznyF3gnLlNbna",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 255,
+    "prompt_tokens": 56,
+    "total_tokens": 311
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: Write the complete SPARQL query to answer the question : Who killed Caesar?
+ Note that the query should be written in the SPARQL 1.1 syntax, should be complete, and the WHERE clause should begin with the subject
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": " of the query.\n\nSELECT ?person\nWHERE {\n  ?person <http://dbpedia.org/ontology/killed> <http://dbpedia.org/resource/Caesar>\n}"
+    }
+  ],
+  "created": 1668279194,
+  "id": "cmpl-6BpusR3vLeDwQN7MvcVDLknYCfICi",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 44,
+    "prompt_tokens": 47,
+    "total_tokens": 91
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: Write the complete SPARQL query to answer the question : Who killed Caesar?
+ Note that the query should be written in the SPARQL 1.1 syntax, should be complete, and the WHERE clause should begin with the ?subject.
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nSELECT ?subject\nWHERE {\n  ?subject ?predicate \"Caesar\" .\n  ?subject ?predicate \"killed\" .\n}"
+    }
+  ],
+  "created": 1668279232,
+  "id": "cmpl-6BpvUEKAUYkAXNUtGX6CwvyXbl7c2",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 33,
+    "prompt_tokens": 49,
+    "total_tokens": 82
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: Write the SPARQL query to answer with an URI the question : Who killed Caesar?
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nSELECT ?person ?personLabel \nWHERE \n{ \n  ?person wdt:P509 ?death_of_caesar. \n}\n\nLIMIT 1"
+    }
+  ],
+  "created": 1668280872,
+  "id": "cmpl-6BqLwImde67S9VaPn5UFcDWcZajrX",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 41,
+    "prompt_tokens": 18,
+    "total_tokens": 59
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: Write the complete SPARQL query to answer with an URI the question : Who killed Caesar?
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nPREFIX d: <http://dbpedia.org/ontology/>\nSELECT ?person\nWHERE {\n  ?person d:deathPlace d:rome .\n  ?person d:deathDate ?date .\n  FILTER (?date >= \"44 BC\"^^xsd:dateTime && ?date <= \"44 BC\"^^xsd:dateTime)\n}"
+    }
+  ],
+  "created": 1668280945,
+  "id": "cmpl-6BqN7NClaevLBQ5DbsCU1SWW9S7va",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 83,
+    "prompt_tokens": 19,
+    "total_tokens": 102
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+GPT3 question: Write the complete SPARQL query to answer the question (the query should begin with SELECT DISTINCT ?uri): Who killed Caesar?
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nSELECT DISTINCT ?uri\nWHERE {\n  ?uri wdt:P31 wd:Q5.\n  ?uri wdt:P1196 ?cause_of_death.\n  ?cause_of_death wdt:P361+ wd:Q1221.\n}"
+    }
+  ],
+  "created": 1668281327,
+  "id": "cmpl-6BqTH8xL61FZ5rfwVR0KLGCV3k8cx",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 67,
+    "prompt_tokens": 29,
+    "total_tokens": 96
+  }
+}
+
+===========================
+
+Question (1/150)
+Question: Who killed Caesar?
+
+Query: PREFIX dct: <http://purl.org/dc/terms/> PREFIX dbc: <http://dbpedia.org/resource/Category:> SELECT DISTINCT ?uri WHERE { ?uri dct:subject dbc:Assassins_of_Julius_Caesar }
+
+Answer: ['http://dbpedia.org/resource/Marcus_Junius_Brutus_the_Younger', 'http://dbpedia.org/resource/Gaius_Cassius_Parmensis', 'http://dbpedia.org/resource/Lucius_Minucius_Basilus', 'http://dbpedia.org/resource/Gaius_Cassius_Longinus', 'http://dbpedia.org/resource/Decimus_Junius_Brutus_Albinus', 'http://dbpedia.org/resource/Servilius_Casca', 'http://dbpedia.org/resource/Tillius_Cimber', 'http://dbpedia.org/resource/Lucius_Cornelius_Cinna_(suffect_consul)', 'http://dbpedia.org/resource/Quintus_Antistius_Labeo']
+
+===========================
+
+Question (6/150)
+Question: Which artists were born on the same date as Rachel Stevens?
+
+Query: PREFIX dbo: <http://dbpedia.org/ontology/> PREFIX dbr: <http://dbpedia.org/resource/> SELECT DISTINCT ?uri WHERE { ?uri a dbo:Artist . dbr:Rachel_Stevens dbo:birthDate ?birthdate . ?uri dbo:birthDate ?birthdate }
+
+Answer: ['http://dbpedia.org/resource/Gizem_Saka', 'http://dbpedia.org/resource/Cameron_Cartio', 'http://dbpedia.org/resource/Vesna_Pisarović']
+
+GPT3 question: Turn this into a DBpedia SPARQL query: "Which artists were born on the same date as Rachel Stevens?"
+
+GPT3 answer: {
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\nPREFIX dbo: <http://dbpedia.org/ontology/>\nPREFIX dbp: <http://dbpedia.org/property/>\n\nSELECT ?name WHERE {\n  ?person dbo:birthDate ?birthDate .\n  ?person dbp:name ?name .\n  FILTER (?birthDate = \"04-Apr-1978\"^^xsd:date)\n}"
+    }
+  ],
+  "created": 1668298800,
+  "id": "cmpl-6Bv16MGVzKvS3RFf4r7L12LJah3IO",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 91,
+    "prompt_tokens": 24,
+    "total_tokens": 115
+  }
+}
+
+===========================
+
